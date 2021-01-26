@@ -11,7 +11,7 @@ while(user_number < 1):
 
 if user_number > my_list[0]:
     my_list.insert(0,user_number)
-elif user_number < my_list[len(my_list)-1]:
+elif user_number < my_list[-1]:
     my_list.insert(len(my_list), user_number)
 else:
     my_list.reverse()
