@@ -4,7 +4,7 @@
 list_length = int(input("Сколько элементов списка вы хотите ввести?: "))
 user_list = []
 changed_list = []
-for i in range(0,list_length):
+for i in range(list_length):
     user_list.append(input(f"Введите {i+1}-й элемент: "))
 
 print(f"Получен список: {user_list}")
