@@ -5,8 +5,7 @@ strange_list = [[1, 2, 12],'зима',[3, 4, 5],'весна',[6, 7, 8],'лето
 month = int(input("Введите месяц цифрой от 1 до 12:"))
 
 for i in range(len(strange_list)):
-    if type(strange_list[i]) != str:
-        if month in strange_list[i]:
+    if type(strange_list[i]) != str and month in strange_list[i]:
             print(f'Это время года: {strange_list[i+1]}')
             break
 
