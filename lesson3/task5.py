@@ -15,12 +15,7 @@ def sum_numbers(user_string):
 
 
 def check_spec_char(user_string):
-    check_result = True
-    try:
-        index_spec = user_string.index('-')
-    except ValueError:
-        check_result = False
-    return check_result
+    return '-' in user_string
 
 def cut_string(user_string):
     cut_string = ''
