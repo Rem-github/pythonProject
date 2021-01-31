@@ -33,11 +33,11 @@ while(True):
     print('Для выхода введите знак "-" без пробелов или через 1 пробел от последнего числа')
     user_string = input ("Введите строку чисел разделенных одним пробелом:")
     if check_spec_char(user_string) == True:
-        sum_all_numbers = sum_all_numbers + sum_numbers(cut_string(user_string))
+        sum_all_numbers += sum_numbers(cut_string(user_string))
         print(f"Итоговая сумма: {sum_all_numbers}")
         break
     else:
-        sum_all_numbers = sum_all_numbers + sum_numbers(user_string)
+        sum_all_numbers += sum_numbers(user_string)
         print(f'Получена сумма: {sum_all_numbers}')
 
 
