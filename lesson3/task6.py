@@ -23,7 +23,7 @@ def create_new_string(user_string):
         if latin_char_chek(word) == False:
             print(f"{word} не корректное слово")
         else:
-            user_new_string = user_new_string + int_func(word) + " "
+            user_new_string += int_func(word) + " "
     return user_new_string
 
 user_string = input("Введите строку слов латинскими буквами через пробел: ")
