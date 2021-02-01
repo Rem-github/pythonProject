@@ -5,6 +5,6 @@
 
 from functools import reduce
 
-user_list = [n for n in range(100, 1001) if n % 2 == 0]
+user_list = [n for n in range(100, 1001, 2)]
 result = reduce(lambda x,y: x * y, user_list)
 print(result)
